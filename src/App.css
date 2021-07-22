@@ -3,3 +3,84 @@
 body{
     font-family: Roboto, Arial, sans-serif;
 }
+
+
+
+.App input.ssearch[type="search"] {
+    margin: 0 auto;
+    width: 50%;
+    display: block;
+    padding: 15px 20px;
+    border: 0;
+    box-shadow: 0 0 3px #ddd;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.App {
+    margin:  0 auto;
+    width: auto;
+}
+
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 1170px) and (max-width: 1920px) { 
+  
+    .App {
+        width: 1170px;
+    }
+}
+/* Tablet & mobile Layout: 768px. */
+@media only screen and (max-width: 1184px) { 
+    .App{
+        width: 970px;
+    }
+    
+    .video-container > .single-video-item {
+        width: 30.24%;
+    }
+}
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+    .App{
+        width: 750px;
+    }
+   
+    .video-container > .single-video-item {
+        width: 46%;
+    }
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+    
+    .App {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        width: auto;
+    }
+    .video-container > .single-video-item {
+        width: 45.8%;
+    }
+    
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+    .App {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        width: auto;
+    }
+
+    .video-container > .single-video-item {
+        max-width: auto !important;
+        width: auto !important;
+        display: block !important;
+        margin: auto 20%;
+    }
+   
+}

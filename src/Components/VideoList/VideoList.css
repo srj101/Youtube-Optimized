@@ -1,13 +1,8 @@
 
-.video-container > .single-video-item {
-    max-width: 360px;
-    display: inline-table;
-    padding: 15px;
-    transition: .3s ease-in-out;
-    cursor: pointer;
-}
+
 .video-container {
     display: block;
+    margin:0 auto;
 }
 
 .video-container  .single-video-item:hover {
@@ -24,4 +19,33 @@
     font-family: fontAwesome;
     content: "\f142";
     font-size: 16px;
+}
+
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+    .App {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        width: auto;
+    }
+
+    .video-container > .single-video-item {
+        max-width: 100% !important;
+        width: auto !important;
+        display: block !important;
+        margin: auto 20%;
+    }
+
+    .App input.ssearch[type="search"] {
+        
+        padding: 10px 20px;
+        
+        font-size: 15px;
+    }
+    .video-title h3 {
+        font-size: 15px;
+    }
 }

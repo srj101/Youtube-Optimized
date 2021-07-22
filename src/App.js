@@ -29,7 +29,7 @@ class MyApp extends Component{
 
     return(
       <div className="App">
-        <input type="search" placeholder="Search" onChange={ e => this.setState({ searchField: e.target.value }) }/>
+        <input type="search" className="ssearch" placeholder="Search" onChange={ e => this.setState({ searchField: e.target.value }) }/>
         <VideoList videos={filteredvideos} />
       </div>
     )

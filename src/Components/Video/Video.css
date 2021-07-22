@@ -1,7 +1,18 @@
 
-.single-video-thumbnail img {
+
+
+.video-container > .single-video-item {
     max-width: 360px;
+    display: inline-table;
+    padding: 15px;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+
+.single-video-thumbnail img {
     max-height: 202px;
+    width: 100%;
 }
 
 
