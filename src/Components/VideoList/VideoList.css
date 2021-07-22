@@ -1,0 +1,27 @@
+
+.video-container > .single-video-item {
+    max-width: 360px;
+    display: inline-table;
+    padding: 15px;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+.video-container {
+    display: block;
+}
+
+.video-container  .single-video-item:hover {
+    opacity: 0.8;
+}
+
+
+.video-container > .single-video-item:hover .video-title > h3:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    color: #909090;
+    font-family: fontAwesome;
+    content: "\f142";
+    font-size: 16px;
+}
